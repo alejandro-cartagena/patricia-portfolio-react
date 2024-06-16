@@ -7,8 +7,11 @@ function HeroSection() {
       <section className="hero" id="hero">
         <div className="container">
           <div className="hero__text">
+            <h3 className="hero__small__heading">Hello, I'm</h3>
             <h1 className="heading">Patricia Jaramillo</h1>
-            <h3>Interior Designer & Rendering Specialist</h3>
+            <h3 style={{ color: "#6a6c75", fontSize: "1.5rem" }}>
+              Interior Designer & Rendering Specialist
+            </h3>
             <p className="text">
               With a background in Interior Design and a passion for
               computer-generated imagery, Patricia Jaramillo specializes in

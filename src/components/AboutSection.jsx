@@ -6,9 +6,7 @@ function AboutSection() {
       <div className="container">
         <div className="about-container">
           <div className="about-flex-item-text">
-            <h3 className="skills__small__heading about__small__heading">
-              About Me
-            </h3>
+            <h3 className="about__small__heading">About Me</h3>
             <h2 className="about-title">Patricia Jaramillo</h2>
             <p className="about-text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.

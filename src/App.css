@@ -28,7 +28,7 @@ body {
 /*********/
 
 .nav-bar {
-  /* z-index: 10000; */
+  z-index: 10000;
   background-color: #ffe9d9;
   position: sticky;
   top: 0;
@@ -68,7 +68,7 @@ body {
   margin-left: 7px;
 }
 
-.nav-bar ul {
+.nav-ul-big-screens {
   list-style: none;
   padding: 0;
   display: flex;
@@ -79,8 +79,72 @@ body {
   color: black;
 }
 
+.nav-bar ul li a:hover {
+  color: #ff9330;
+}
+
 .nav-bar ul li:not(:last-child) {
   margin-right: 2em;
+}
+
+.burger-menu {
+  display: none;
+  font-size: 2rem;
+  position: absolute;
+  right: 1em;
+  top: 0.65em;
+  cursor: pointer;
+}
+
+.burger-menu:hover {
+  color: #ff9330;
+}
+
+.off-screen-menu {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .nav-ul-big-screens {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .nav-bar ul li:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .off-screen-menu {
+    margin-top: 0;
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 4em;
+    position: absolute;
+    background-color: #ffe9d9;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+  }
+
+  .off-screen-menu li {
+    list-style: none;
+  }
+
+  .off-screen-menu li a {
+    font-size: 2rem;
+    font-weight: 500;
+    transition: ease-in-out 0.1s;
+  }
+
+  .off-screen-menu li a:hover {
+    color: #f5b30e;
+  }
 }
 
 /*****************/
@@ -110,20 +174,44 @@ header {
 .hero__text {
   order: 2;
   letter-spacing: 1px;
-  line-height: 25px;
+  /* line-height: 25px; */
   text-align: center;
+}
+
+.hero__text p {
+  line-height: 25px;
 }
 
 .hero__text .heading {
   margin-top: 0;
   color: #04091e;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  margin-bottom: 0;
 }
 
-.hero__text h3 {
+.hero__small__heading,
+.projects__small__heading {
+  color: #ff9330;
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+@media (max-width: 499px) {
+  .btn-primary {
+    margin-bottom: 1em;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero__text .heading {
+    line-height: 40px;
+  }
+}
+
+/* .hero__text h3 {
   font-size: 1.5rem;
   color: #6a6c75;
-}
+} */
 
 .hero__text .text {
   color: #6a6c75;
@@ -142,7 +230,7 @@ header {
 }
 
 .hero__text .btn-primary {
-  color: #ffb700;
+  color: #ff9330;
   background-color: black;
   margin-right: 1em;
   transition: ease-in-out 0.2s;
@@ -161,14 +249,24 @@ header {
 }
 
 .hero__text .btn-outline:hover {
-  background-color: black;
-  color: #ffb700;
+  background-color: #ffffff;
+  color: #04091e;
   transform: translateY(4px);
+}
+
+.person__image {
+  width: 300px;
 }
 
 /**********************************/
 /*HERO SECTION RESPONSIVE STYLES */
 /********************************/
+
+@media (min-width: 500px) {
+  .person__image {
+    width: 400px;
+  }
+}
 
 @media (min-width: 950px) {
   .hero .container {
@@ -180,7 +278,11 @@ header {
 
   .hero__image {
     order: 2;
-    width: 33%;
+    width: 36%;
+  }
+
+  .person__image {
+    width: 100%;
   }
 
   .hero__text {
@@ -205,12 +307,13 @@ header {
 }
 
 .skills__small__heading {
+  font-size: 1.75rem;
   margin: 0;
-  color: #ffb700;
+  color: #ff9330;
 }
 
 .skills .container h2 {
-  font-size: 2.25rem;
+  font-size: 2.75rem;
   margin: 0;
 }
 
@@ -220,7 +323,7 @@ header {
 
 .skills__card__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2em;
 }
 
@@ -282,10 +385,11 @@ header {
   justify-content: space-between;
 }
 
-.about__small__heading {
+.about__small__heading,
+.skills__small__heading {
   font-size: 1.75rem;
   margin: 0;
-  color: #ffb700;
+  color: #f5b30e;
 }
 
 .about-title {
@@ -342,15 +446,21 @@ header {
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2em;
 }
 
-.project {
+.project-card {
+  cursor: pointer;
   background-color: #ffe2cc;
   padding: 2em;
   border-radius: 6px;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.04s ease-in-out;
+}
+
+.project-card:hover {
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
 }
 
 .project-img {
