@@ -37,7 +37,7 @@ function ProjectsSection() {
                   className="project-img"
                   src={BuildingImg}
                   alt=""
-                  srcset=""
+                  srcSet=""
                 />
                 <p className="project-sub-heading">sub heading</p>
                 <h3 className="project-title">Building</h3>
@@ -50,7 +50,7 @@ function ProjectsSection() {
                   className="project-img"
                   src={BeigeInteriorImg}
                   alt=""
-                  srcset=""
+                  srcSet=""
                 />
                 <p className="project-sub-heading">sub heading</p>
                 <h3 className="project-title">Building</h3>
@@ -63,7 +63,7 @@ function ProjectsSection() {
                   className="project-img"
                   src={ParkingLot}
                   alt=""
-                  srcset=""
+                  srcSet=""
                 />
                 <p className="project-sub-heading">sub heading</p>
                 <h3 className="project-title">Building</h3>
@@ -72,7 +72,7 @@ function ProjectsSection() {
 
             <Tilt options={defaultOptions} className="project-card">
               <div className="project-card-content">
-                <img className="project-img" src={Lobby} alt="" srcset="" />
+                <img className="project-img" src={Lobby} alt="" srcSet="" />
                 <p className="project-sub-heading">sub heading</p>
                 <h3 className="project-title">Building</h3>
               </div>

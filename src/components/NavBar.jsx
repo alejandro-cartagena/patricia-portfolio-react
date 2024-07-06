@@ -1,12 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaintBrush, faBars, faX } from "@fortawesome/free-solid-svg-icons";
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [navScroll, setNavScroll] = useState(false);
+
+  const setNavScrollEffect = () => {
+    if (window.scrollY >= 83) {
+      setNavScroll(true);
+    } else {
+      setNavScroll(false);
+    }
+  };
+
+  window.addEventListener("scroll", setNavScrollEffect);
 
   return (
-    <nav className="nav-bar">
+    <nav className={`nav-bar ${navScroll ? "active" : ""}`}>
       {menuOpen && (
         <ul className="off-screen-menu">
           <li>

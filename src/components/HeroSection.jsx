@@ -14,10 +14,10 @@ function HeroSection() {
             </h3>
             <p className="text">
               With a background in Interior Design and a passion for
-              computer-generated imagery, Patricia Jaramillo specializes in
-              rendering animations. She has collaborated with companies like
-              Pollo Tropical and Bonet International, delivering realistic
-              renders for a diverse range of clients and projects.
+              computer-generated imagery, I specialize in rendering animations.
+              I have collaborated with companies like Pollo Tropical and Bonet
+              International, delivering realistic renders for a diverse range of
+              clients and projects.
             </p>
             <a className="btn btn-primary" href="#">
               Explore My Work
@@ -32,7 +32,7 @@ function HeroSection() {
                 className="person__image"
                 src={PatriciaHeadshot}
                 alt="Patricia Jaramillo smiling"
-                srcset=""
+                srcSet=""
               />
             </div>
           </div>
