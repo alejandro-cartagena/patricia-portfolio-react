@@ -8,18 +8,20 @@ import HeroSection from "./components/HeroSection";
 import SkillsSection from "./components/SkillsSection";
 import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
+import Footer from "./components/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
+    <div>
       <NavBar />
       <HeroSection />
       <SkillsSection />
       <AboutSection />
       <ProjectsSection />
-    </>
+      <Footer />
+    </div>
   );
 }
 

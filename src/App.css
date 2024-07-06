@@ -46,6 +46,11 @@ body {
   justify-content: space-between;
 }
 
+.nav-logo {
+  text-decoration: none;
+  color: #04091e;
+}
+
 .nav-icon-heading-container {
   display: flex;
   align-items: center;
@@ -149,6 +154,21 @@ body {
   .off-screen-menu li a:hover {
     color: #f5b30e;
   }
+}
+
+/***********/
+/* Footer */
+/*********/
+
+footer {
+  text-align: center;
+  padding: 2em 0;
+  background-color: #04091e;
+}
+
+footer h3 {
+  font-weight: 400;
+  color: #6a6c75;
 }
 
 /*****************/

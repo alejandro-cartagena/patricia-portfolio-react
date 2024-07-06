@@ -21,16 +21,24 @@ function NavBar() {
       {menuOpen && (
         <ul className="off-screen-menu">
           <li>
-            <a href="#">Home</a>
+            <a onClick={() => setMenuOpen(false)} href="#hero">
+              Home
+            </a>
           </li>
           <li>
-            <a href="#">Skills</a>
+            <a onClick={() => setMenuOpen(false)} href="#skills">
+              Skills
+            </a>
           </li>
           <li>
-            <a href="#">About Me</a>
+            <a onClick={() => setMenuOpen(false)} href="#about">
+              About Me
+            </a>
           </li>
           <li>
-            <a href="#">Portfolio</a>
+            <a onClick={() => setMenuOpen(false)} href="#projects">
+              Portfolio
+            </a>
           </li>
         </ul>
       )}
@@ -50,24 +58,26 @@ function NavBar() {
       )}
 
       <div className="container">
-        <div className="nav-icon-heading-container">
-          <FontAwesomeIcon className="paint-icon" icon={faPaintBrush} />
-          <h2>Patricia</h2>
-        </div>
+        <a className="nav-logo" href="#hero">
+          <div className="nav-icon-heading-container">
+            <FontAwesomeIcon className="paint-icon" icon={faPaintBrush} />
+            <h2>Patricia</h2>
+          </div>
+        </a>
         {/* <i className="fa-solid fa-bars hidden"></i>
             <i className="fa-solid fa-x hidden"></i> */}
         <ul className="nav-ul-big-screens">
           <li>
-            <a href="#">Home</a>
+            <a href="#hero">Home</a>
           </li>
           <li>
-            <a href="#">Skills</a>
+            <a href="#skills">Skills</a>
           </li>
           <li>
-            <a href="#">About Me</a>
+            <a href="#about">About Me</a>
           </li>
           <li>
-            <a href="#">Portfolio</a>
+            <a href="#projects">Portfolio</a>
           </li>
         </ul>
       </div>
