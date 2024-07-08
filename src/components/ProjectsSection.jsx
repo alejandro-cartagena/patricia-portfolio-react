@@ -8,6 +8,7 @@ import ParkingLot from "../images/parking-lot.jpg";
 // React Tilt for hover effect
 
 import { Tilt } from "react-tilt";
+import { Link } from "react-router-dom";
 
 const defaultOptions = {
   reverse: true, // reverse the tilt direction
@@ -57,17 +58,20 @@ function ProjectsSection() {
               </div>
             </Tilt>
 
+            {/* Parking Lot */}
             <Tilt options={defaultOptions} className="project-card">
-              <div className="project-card-content">
-                <img
-                  className="project-img"
-                  src={ParkingLot}
-                  alt=""
-                  srcSet=""
-                />
-                <p className="project-sub-heading">sub heading</p>
-                <h3 className="project-title">Building</h3>
-              </div>
+              <Link className="project-card-link" to={"/project/2"}>
+                <div className="project-card-content">
+                  <img
+                    className="project-img"
+                    src={ParkingLot}
+                    alt=""
+                    srcSet=""
+                  />
+                  <p className="project-sub-heading">sub heading</p>
+                  <h3 className="project-title">Building</h3>
+                </div>
+              </Link>
             </Tilt>
 
             <Tilt options={defaultOptions} className="project-card">

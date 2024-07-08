@@ -61,7 +61,7 @@ export default function SkillsSection() {
             skillIcon={
               <FontAwesomeIcon className="skills__card__icon" icon={faPencil} />
             }
-            skillName={"Drawing"}
+            skillName={"Graphic Design"}
           />
           <SkillsCard
             skillIcon={

@@ -23,6 +23,12 @@ body {
   display: none;
 }
 
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 /***********/
 /* NavBar */
 /*********/
@@ -161,8 +167,9 @@ body {
 /*********/
 
 footer {
+  margin-top: auto;
   text-align: center;
-  padding: 2em 0;
+  padding: 2em;
   background-color: #04091e;
 }
 
@@ -455,6 +462,11 @@ header {
 /*********************/
 /* Projects Section */
 /*******************/
+
+.project-card-link {
+  text-decoration: none;
+  color: #04091e;
+}
 
 #projects {
   background-color: #ffe9d9;

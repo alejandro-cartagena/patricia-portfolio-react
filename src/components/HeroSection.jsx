@@ -19,10 +19,10 @@ function HeroSection() {
               International, delivering realistic renders for a diverse range of
               clients and projects.
             </p>
-            <a className="btn btn-primary" href="#">
+            <a className="btn btn-primary" href="#projects">
               Explore My Work
             </a>
-            <a className="btn btn-outline" href="#">
+            <a className="btn btn-outline" href="#about">
               About Me
             </a>
           </div>

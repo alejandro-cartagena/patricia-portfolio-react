@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { useLocation, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaintBrush, faBars, faX } from "@fortawesome/free-solid-svg-icons";
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [navScroll, setNavScroll] = useState(false);
+  const location = useLocation();
 
   const setNavScrollEffect = () => {
     if (window.scrollY >= 83) {
@@ -16,29 +18,38 @@ function NavBar() {
 
   window.addEventListener("scroll", setNavScrollEffect);
 
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
   return (
     <nav className={`nav-bar ${navScroll ? "active" : ""}`}>
       {menuOpen && (
         <ul className="off-screen-menu">
           <li>
-            <a onClick={() => setMenuOpen(false)} href="#hero">
+            <Link onClick={() => setMenuOpen(false)} to="/#hero">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a onClick={() => setMenuOpen(false)} href="#skills">
+            <Link onClick={() => setMenuOpen(false)} to="/#skills">
               Skills
-            </a>
+            </Link>
           </li>
           <li>
-            <a onClick={() => setMenuOpen(false)} href="#about">
+            <Link onClick={() => setMenuOpen(false)} to="/#about">
               About Me
-            </a>
+            </Link>
           </li>
           <li>
-            <a onClick={() => setMenuOpen(false)} href="#projects">
+            <Link onClick={() => setMenuOpen(false)} to="/#projects">
               Portfolio
-            </a>
+            </Link>
           </li>
         </ul>
       )}
@@ -58,26 +69,26 @@ function NavBar() {
       )}
 
       <div className="container">
-        <a className="nav-logo" href="#hero">
+        <Link className="nav-logo" to="/#hero">
           <div className="nav-icon-heading-container">
             <FontAwesomeIcon className="paint-icon" icon={faPaintBrush} />
             <h2>Patricia</h2>
           </div>
-        </a>
+        </Link>
         {/* <i className="fa-solid fa-bars hidden"></i>
             <i className="fa-solid fa-x hidden"></i> */}
         <ul className="nav-ul-big-screens">
           <li>
-            <a href="#hero">Home</a>
+            <Link to="/#hero">Home</Link>
           </li>
           <li>
-            <a href="#skills">Skills</a>
+            <Link to="/#skills">Skills</Link>
           </li>
           <li>
-            <a href="#about">About Me</a>
+            <Link to="/#about">About</Link>
           </li>
           <li>
-            <a href="#projects">Portfolio</a>
+            <Link to="/#projects">Portfolio</Link>
           </li>
         </ul>
       </div>
