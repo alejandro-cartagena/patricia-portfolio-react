@@ -515,3 +515,67 @@ header {
   margin: 0;
   font-size: 1.75rem;
 }
+
+/***********************/
+/*PROJECT PAGE STYLES */
+/*********************/
+
+.project-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 75vh;
+}
+
+.project-name {
+  margin-top: 0;
+}
+
+.project-video-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-info {
+  margin-bottom: 2em;
+}
+
+.image-gallery {
+  margin: 1em 0;
+  width: 100%;
+}
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  height: 500px !important;
+}
+
+.image-gallery-slide .image-gallery-image {
+  object-fit: cover !important;
+}
+
+@media (min-width: 900px) {
+  .project-video-title-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .project-info {
+    width: 45%;
+  }
+
+  .project-name {
+    text-align: left;
+  }
+
+  .image-gallery {
+    width: 90%;
+  }
+}
+
+@media (max-width: 550px) {
+  .image-gallery-content .image-gallery-slide .image-gallery-image {
+    height: 350px !important;
+  }
+}

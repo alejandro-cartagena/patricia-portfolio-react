@@ -1,9 +1,10 @@
 import React from "react";
 
 import BuildingImg from "../images/building.jpg";
-import BeigeInteriorImg from "../images/beige-interior.jpg";
+import portsViewImg1 from "../images/portsViewImg1.jpg";
 import Lobby from "../images/lobby.jpg";
 import ParkingLot from "../images/parking-lot.jpg";
+import PolloTropicalImg from "../images/polloTropicalVideoThumbnail1.png";
 
 // React Tilt for hover effect
 
@@ -46,16 +47,18 @@ function ProjectsSection() {
             </Tilt>
 
             <Tilt options={defaultOptions} className="project-card">
-              <div className="project-card-content">
-                <img
-                  className="project-img"
-                  src={BeigeInteriorImg}
-                  alt=""
-                  srcSet=""
-                />
-                <p className="project-sub-heading">sub heading</p>
-                <h3 className="project-title">Building</h3>
-              </div>
+              <Link className="project-card-link" to={"/project/1"}>
+                <div className="project-card-content">
+                  <img
+                    className="project-img"
+                    src={portsViewImg1}
+                    alt=""
+                    srcSet=""
+                  />
+                  <p className="project-sub-heading">sub heading</p>
+                  <h3 className="project-title">Building</h3>
+                </div>
+              </Link>
             </Tilt>
 
             {/* Parking Lot */}
@@ -80,6 +83,21 @@ function ProjectsSection() {
                 <p className="project-sub-heading">sub heading</p>
                 <h3 className="project-title">Building</h3>
               </div>
+            </Tilt>
+
+            <Tilt options={defaultOptions} className="project-card">
+              <Link className="project-card-link" to={"/project/4"}>
+                <div className="project-card-content">
+                  <img
+                    className="project-img"
+                    src={PolloTropicalImg}
+                    alt=""
+                    srcSet=""
+                  />
+                  <p className="project-sub-heading">sub heading</p>
+                  <h3 className="project-title">Building</h3>
+                </div>
+              </Link>
             </Tilt>
           </div>
         </div>
