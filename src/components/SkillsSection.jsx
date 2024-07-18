@@ -37,21 +37,6 @@ export default function SkillsSection() {
             skillIcon={
               <FontAwesomeIcon
                 className="skills__card__icon"
-                icon={faPersonShelter}
-              />
-            }
-            skillName={"Interior Design"}
-          />
-          <SkillsCard
-            skillIcon={
-              <FontAwesomeIcon className="skills__card__icon" icon={faHouse} />
-            }
-            skillName={"Exterior Design"}
-          />
-          <SkillsCard
-            skillIcon={
-              <FontAwesomeIcon
-                className="skills__card__icon"
                 icon={faComputer}
               />
             }
@@ -59,18 +44,12 @@ export default function SkillsSection() {
           />
           <SkillsCard
             skillIcon={
-              <FontAwesomeIcon className="skills__card__icon" icon={faPencil} />
-            }
-            skillName={"Graphic Design"}
-          />
-          <SkillsCard
-            skillIcon={
               <FontAwesomeIcon
                 className="skills__card__icon"
-                icon={faListCheck}
+                icon={faPersonShelter}
               />
             }
-            skillName={"Project Planning"}
+            skillName={"Interior Design"}
           />
         </div>
       </div>

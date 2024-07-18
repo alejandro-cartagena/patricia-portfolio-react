@@ -15,9 +15,9 @@ function HeroSection() {
             <p className="text">
               With a background in Interior Design and a passion for
               computer-generated imagery, I specialize in rendering animations.
-              I have collaborated with companies like Pollo Tropical and Bonet
-              International, delivering realistic renders for a diverse range of
-              clients and projects.
+              I have collaborated with companies like Bonet International and
+              Pollo Tropical, delivering realistic renders for a diverse range
+              of clients and projects.
             </p>
             <a className="btn btn-primary" href="#projects">
               Explore My Work

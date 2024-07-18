@@ -5,7 +5,8 @@ import portsViewImg1 from "../images/portsViewImg1.jpg";
 import Lobby from "../images/lobby.jpg";
 import ParkingLot from "../images/parking-lot.jpg";
 import PolloTropicalImg from "../images/polloTropicalVideoThumbnail1.png";
-
+import houseImg1 from "../images/houseImg1.png";
+import costaRicaImg1 from "../images/costaRicaImg1.png";
 // React Tilt for hover effect
 
 import { Tilt } from "react-tilt";
@@ -34,20 +35,7 @@ function ProjectsSection() {
           </div>
           <div className="projects-container">
             <Tilt options={defaultOptions} className="project-card">
-              <div className="project-card-content">
-                <img
-                  className="project-img"
-                  src={BuildingImg}
-                  alt=""
-                  srcSet=""
-                />
-                <p className="project-sub-heading">sub heading</p>
-                <h3 className="project-title">Building</h3>
-              </div>
-            </Tilt>
-
-            <Tilt options={defaultOptions} className="project-card">
-              <Link className="project-card-link" to={"/project/1"}>
+              <Link className="project-card-link" to={"/project/0"}>
                 <div className="project-card-content">
                   <img
                     className="project-img"
@@ -55,38 +43,24 @@ function ProjectsSection() {
                     alt=""
                     srcSet=""
                   />
-                  <p className="project-sub-heading">sub heading</p>
-                  <h3 className="project-title">Building</h3>
+                  <p className="project-sub-heading">Bonet International</p>
+                  <h3 className="project-title">Portsview - Aventura</h3>
                 </div>
               </Link>
             </Tilt>
 
-            {/* Parking Lot */}
+            <Tilt options={defaultOptions} className="project-card">
+              <Link className="project-card-link" to={"/project/1"}>
+                <div className="project-card-content">
+                  <img className="project-img" src={Lobby} alt="" srcSet="" />
+                  <p className="project-sub-heading">Building in California</p>
+                  <h3 className="project-title">Blue Mountain</h3>
+                </div>
+              </Link>
+            </Tilt>
+
             <Tilt options={defaultOptions} className="project-card">
               <Link className="project-card-link" to={"/project/2"}>
-                <div className="project-card-content">
-                  <img
-                    className="project-img"
-                    src={ParkingLot}
-                    alt=""
-                    srcSet=""
-                  />
-                  <p className="project-sub-heading">sub heading</p>
-                  <h3 className="project-title">Building</h3>
-                </div>
-              </Link>
-            </Tilt>
-
-            <Tilt options={defaultOptions} className="project-card">
-              <div className="project-card-content">
-                <img className="project-img" src={Lobby} alt="" srcSet="" />
-                <p className="project-sub-heading">sub heading</p>
-                <h3 className="project-title">Building</h3>
-              </div>
-            </Tilt>
-
-            <Tilt options={defaultOptions} className="project-card">
-              <Link className="project-card-link" to={"/project/4"}>
                 <div className="project-card-content">
                   <img
                     className="project-img"
@@ -94,8 +68,54 @@ function ProjectsSection() {
                     alt=""
                     srcSet=""
                   />
-                  <p className="project-sub-heading">sub heading</p>
-                  <h3 className="project-title">Building</h3>
+                  <p className="project-sub-heading">FAU & Miramar, Florida</p>
+                  <h3 className="project-title">Pollo Tropical</h3>
+                </div>
+              </Link>
+            </Tilt>
+
+            {/* Parking Lot */}
+            <Tilt options={defaultOptions} className="project-card">
+              <Link className="project-card-link" to={"/project/3"}>
+                <div className="project-card-content">
+                  <img
+                    className="project-img"
+                    src={ParkingLot}
+                    alt=""
+                    srcSet=""
+                  />
+                  <p className="project-sub-heading">Construction Technology</p>
+                  <h3 className="project-title">Parking Plaza</h3>
+                </div>
+              </Link>
+            </Tilt>
+
+            <Tilt options={defaultOptions} className="project-card">
+              <Link className="project-card-link" to={"/project/4"}>
+                <div className="project-card-content">
+                  <img
+                    className="project-img"
+                    src={houseImg1}
+                    alt=""
+                    srcSet=""
+                  />
+                  <p className="project-sub-heading">House</p>
+                  <h3 className="project-title">House for Client</h3>
+                </div>
+              </Link>
+            </Tilt>
+
+            <Tilt options={defaultOptions} className="project-card">
+              <Link className="project-card-link" to={"/project/5"}>
+                <div className="project-card-content">
+                  <img
+                    className="project-img"
+                    src={costaRicaImg1}
+                    alt=""
+                    srcSet=""
+                  />
+                  <p className="project-sub-heading">Costa Rica</p>
+                  <h3 className="project-title">Hotel Concept</h3>
                 </div>
               </Link>
             </Tilt>
