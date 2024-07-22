@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import PatriciaHeadshot from "../images/patriciaHeadshot.png";
 
 function HeroSection() {
@@ -19,12 +20,12 @@ function HeroSection() {
               Pollo Tropical, delivering realistic renders for a diverse range
               of clients and projects.
             </p>
-            <a className="btn btn-primary" href="#projects">
+            <Link className="btn btn-primary" to="/#projects">
               Explore My Work
-            </a>
-            <a className="btn btn-outline" href="#about">
+            </Link>
+            <Link className="btn btn-outline" to="/#about">
               About Me
-            </a>
+            </Link>
           </div>
           <div className="hero__image">
             <div className="hero__image__container">
