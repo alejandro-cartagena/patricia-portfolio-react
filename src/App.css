@@ -348,9 +348,9 @@ header {
   margin: 0;
 }
 
-#skills p {
+/* #skills p {
   margin-bottom: 4em;
-}
+} */
 
 .skills__card__container {
   display: grid;
@@ -359,6 +359,11 @@ header {
 }
 
 .skills__card {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  text-align: center; */
+  gap: 1.5em;
   padding: 2em;
   background-color: #f5f5f5;
   border-radius: 6px;
@@ -367,12 +372,12 @@ header {
 }
 
 .skills__card__icon__circle {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   background-color: #ffffff;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2.5em;
+  /* margin-bottom: 2.5em; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -380,6 +385,7 @@ header {
 }
 
 .skills__card__icon {
+  font-size: 1.75rem;
   transition: ease-in-out 0.15s;
 }
 
@@ -404,6 +410,15 @@ header {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 1.25rem;
+  margin: 0;
+}
+
+.skills__card__description {
+  /* color: #6a6c75; */
+  /* opacity: 0.9; */
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  margin: 0;
 }
 
 /******************************/
@@ -521,14 +536,17 @@ header {
 /*********************/
 
 .project-page {
+  padding: 3em 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 75vh;
+  /* width: 100%; */
 }
 
 .project-name {
   margin-top: 0;
+  margin-bottom: 0.5em;
 }
 
 .project-video-title-container {
@@ -537,23 +555,37 @@ header {
   align-items: center;
 }
 
-.project-info {
-  margin-bottom: 2em;
-}
-
 .image-gallery {
-  margin: 1em 0;
   width: 100%;
 }
 
 .image-gallery-content .image-gallery-slide .image-gallery-image {
-  height: 500px !important;
+  height: 650px !important;
 }
 
 .image-gallery-slide .image-gallery-image {
   object-fit: cover !important;
 }
 
+@media (min-width: 1200px) {
+  .project-page {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .image-gallery-content .image-gallery-slide .image-gallery-image {
+    height: 500px !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .image-gallery-content .image-gallery-slide .image-gallery-image {
+    height: 350px !important;
+  }
+}
+
+/* 
 @media (min-width: 900px) {
   .project-video-title-container {
     flex-direction: row;
@@ -578,4 +610,4 @@ header {
   .image-gallery-content .image-gallery-slide .image-gallery-image {
     height: 350px !important;
   }
-}
+} */

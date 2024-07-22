@@ -63,6 +63,7 @@ function ProjectPage() {
   return (
     <div className="project-page container">
       <div className="project-video-title-container">
+        <h1 className="project-name">{projects[projectId].name}</h1>
         {images && (
           <div className="image-gallery">
             <ImageGallery
@@ -72,8 +73,7 @@ function ProjectPage() {
             />
           </div>
         )}
-        <div className="project-info">
-          <h1 className="project-name">{projects[projectId].name}</h1>
+        {/* <div className="project-info">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
             nostrum ab fuga inventore minima consequuntur ducimus voluptatem
@@ -83,7 +83,7 @@ function ProjectPage() {
             dolorum maiores ullam ipsam officia doloribus voluptatibus possimus
             labore ut, aspernatur quibusdam eaque atque.
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
