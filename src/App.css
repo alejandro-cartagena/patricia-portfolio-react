@@ -561,10 +561,8 @@ header {
 
 .image-gallery-content .image-gallery-slide .image-gallery-image {
   height: 650px !important;
-}
-
-.image-gallery-slide .image-gallery-image {
   object-fit: cover !important;
+  padding-top: 0 !important;
 }
 
 @media (min-width: 1200px) {
