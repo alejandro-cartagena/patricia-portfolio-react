@@ -10,7 +10,7 @@ function HeroSection() {
           <div className="hero__text">
             <h3 className="hero__small__heading">Hello, I'm</h3>
             <h1 className="heading">Patricia Jaramillo</h1>
-            <h3 style={{ color: "#6a6c75", fontSize: "1.5rem" }}>
+            <h3 style={{ color: "#ff9330", fontSize: "1.5rem" }}>
               Interior Designer & Rendering Specialist
             </h3>
             <p className="text">

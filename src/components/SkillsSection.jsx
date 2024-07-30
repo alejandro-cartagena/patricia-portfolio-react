@@ -33,7 +33,7 @@ export default function SkillsSection() {
             }
             skillName={"3D Animation"}
             skillDescription={
-              "Bring your vision to life with stunning 3D animations. My animations add dynamism and realism to your projects, making them more engaging and visually appealing."
+              "Bring your vision to life with stunning 3D animations."
             }
           />
           <SkillsCard
@@ -45,7 +45,7 @@ export default function SkillsSection() {
             }
             skillName={"Rendering"}
             skillDescription={
-              "Experience photorealistic renderings that showcase every detail of your designs. My rendering services provide high-quality, lifelike images that help you visualize and refine your projects."
+              "Experience photorealistic renderings showcasing every detail of your designs."
             }
           />
           <SkillsCard
@@ -57,7 +57,7 @@ export default function SkillsSection() {
             }
             skillName={"Interior Design"}
             skillDescription={
-              "Transform spaces with innovative interior design solutions. My expertise in creating functional and aesthetically pleasing environments ensures that every project reflects your unique style and needs."
+              "Transform spaces with innovative interior design solutions."
             }
           />
         </div>

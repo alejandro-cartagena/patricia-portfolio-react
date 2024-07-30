@@ -245,7 +245,7 @@ header {
 } */
 
 .hero__text .text {
-  color: #6a6c75;
+  color: #535353;
   font-size: 1.125rem;
   margin-bottom: 4em;
 }
@@ -353,6 +353,7 @@ header {
 } */
 
 .skills__card__container {
+  margin-top: 2em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2em;
@@ -416,6 +417,7 @@ header {
 .skills__card__description {
   /* color: #6a6c75; */
   /* opacity: 0.9; */
+  color: #535353;
   line-height: 22px;
   letter-spacing: 0.5px;
   margin: 0;
