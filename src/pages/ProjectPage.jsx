@@ -89,6 +89,7 @@ function ProjectPage() {
     <div className="project-page container">
       <div className="project-video-title-container">
         <h1 className="project-name">{projects[projectId].name}</h1>
+        <div className="services__line"></div>
         {images && (
           <div className="image-gallery">
             <ImageGallery

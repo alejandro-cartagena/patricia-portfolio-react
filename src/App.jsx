@@ -1,4 +1,4 @@
-import "./App.css";
+// import "./App.css";
 import { useLocation } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 
@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="app">
+    <div className="app" id="hero">
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />

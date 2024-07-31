@@ -23,8 +23,8 @@ function HeroSection() {
             <Link className="btn btn-primary" to="/#projects">
               Explore My Work
             </Link>
-            <Link className="btn btn-outline" to="/#about">
-              About Me
+            <Link className="btn btn-outline" to="/#skills">
+              My Skills
             </Link>
           </div>
           <div className="hero__image">

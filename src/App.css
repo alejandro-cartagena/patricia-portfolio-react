@@ -250,7 +250,7 @@ header {
   margin-bottom: 4em;
 }
 
-.hero__text .btn {
+.btn {
   display: inline-block;
   font-size: 1.35rem;
   font-weight: 600;
@@ -260,26 +260,26 @@ header {
   border-radius: 4px;
 }
 
-.hero__text .btn-primary {
+.btn-primary {
   color: #ff9330;
   background-color: black;
   margin-right: 1em;
   transition: ease-in-out 0.2s;
 }
 
-.hero__text .btn-primary:hover {
+.btn-primary:hover {
   background-color: #ffffff;
   color: #04091e;
 
   transform: translateY(4px);
 }
 
-.hero__text .btn-outline {
+.btn-outline {
   color: #04091e;
   transition: ease-in-out 0.2s;
 }
 
-.hero__text .btn-outline:hover {
+.btn-outline:hover {
   background-color: #ffffff;
   color: #04091e;
   transform: translateY(4px);
@@ -325,7 +325,9 @@ header {
 
 #skills,
 #about,
-#projects {
+#projects,
+#contact,
+#services {
   padding: 6em 0;
 }
 
@@ -369,6 +371,7 @@ header {
   background-color: #f5f5f5;
   border-radius: 6px;
   transition: ease-in-out 0.15s;
+  box-shadow: 5px 5px 5px #f5b30e;
   /* box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2); */
 }
 
@@ -423,9 +426,77 @@ header {
   margin: 0;
 }
 
+/***************************/
+/*SERVICES SECTION STYLES */
+/*************************/
+
+.services {
+  text-align: center;
+}
+
+.services__container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.services__heading {
+  margin-top: 0;
+  font-size: 2.75rem;
+}
+
+.services__line {
+  border-bottom: 4px solid #f5b30e;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 2.5em;
+}
+
+.services__section {
+  background-color: #ffffff;
+  padding: 2em;
+  border-radius: 4px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.services__section__last {
+  margin-bottom: 6em;
+}
+
+.services__arrow {
+  font-size: 3rem;
+  margin: 0.5em 0;
+  color: #535353;
+}
+
+/* .services__section:not(:last-child) {
+  margin-bottom: 1.5em;
+} */
+
+.services__section__heading {
+  margin-top: 0;
+  font-size: 1.75rem;
+  color: #535353;
+}
+
+.services__section__text {
+  font-size: 1.125rem;
+  color: #535353;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+.btn-book-call-services {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /******************************/
 /* About Section Styles  *****/
 /****************************/
+
+.about {
+  background-color: #ffe9d9;
+}
 
 .about-container {
   display: flex;
@@ -447,9 +518,14 @@ header {
 }
 
 .about-text {
+  color: #525252;
   letter-spacing: 0.75px;
   line-height: 25px;
   font-size: 1rem;
+}
+
+.about-btns {
+  margin-top: 3em;
 }
 
 .about-flex-item-text {
@@ -486,7 +562,7 @@ header {
 }
 
 #projects {
-  background-color: #ffe9d9;
+  background-color: #ffffff;
 }
 
 .projects-heading-container {
@@ -505,7 +581,7 @@ header {
 
 .project-card {
   cursor: pointer;
-  background-color: #ffe2cc;
+  background-color: #ffe9d9;
   padding: 2em;
   border-radius: 6px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
@@ -585,29 +661,75 @@ header {
   }
 }
 
-/* 
-@media (min-width: 900px) {
-  .project-video-title-container {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
+/**************************/
+/*CONTACT SECTION STYLES */
+/************************/
 
-  .project-info {
-    width: 45%;
-  }
+/* .contact {
+  background-color: #ffffff;
+} */
 
-  .project-name {
-    text-align: left;
-  }
-
-  .image-gallery {
-    width: 90%;
-  }
+.contact__heading {
+  font-size: 1.75rem;
+  margin: 0;
+  color: #ff9330;
 }
 
-@media (max-width: 550px) {
-  .image-gallery-content .image-gallery-slide .image-gallery-image {
-    height: 350px !important;
+.contact__subheading {
+  margin-top: 0;
+  font-size: 2.75rem;
+}
+
+.contact__details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__details__key {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact__details__value {
+  color: #525252;
+  font-size: 1.25rem;
+}
+
+.btn-book-call {
+  display: block;
+  width: fit-content;
+  margin-top: 1.5em;
+  border: solid black;
+  text-decoration: none;
+  font-weight: 500;
+  color: #ff9330;
+  background-color: #04091e;
+  border-radius: 4px;
+  font-size: 1.35rem;
+  padding: 0.5em 1em;
+  transition: ease-in-out 0.2s;
+}
+
+.btn-book-call:hover {
+  background-color: #ffffff;
+  color: #04091e;
+
+  transform: translateY(4px);
+}
+
+@media (max-width: 700px) {
+  .contact {
+    text-align: center;
   }
-} */
+
+  .contact__details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-book-call-contact {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

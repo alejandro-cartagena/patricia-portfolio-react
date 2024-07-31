@@ -60,6 +60,36 @@ export default function SkillsSection() {
               "Transform spaces with innovative interior design solutions."
             }
           />
+          <SkillsCard
+            skillIcon={
+              <FontAwesomeIcon className="skills__card__icon" icon={faHouse} />
+            }
+            skillName={"Exterior Design"}
+            skillDescription={
+              "Revamp exteriors with cutting-edge design solutions."
+            }
+          />
+          <SkillsCard
+            skillIcon={
+              <FontAwesomeIcon className="skills__card__icon" icon={faPencil} />
+            }
+            skillName={"Technical Drawing"}
+            skillDescription={
+              "Capability to read and interpret architectural and engineering drawings."
+            }
+          />
+          <SkillsCard
+            skillIcon={
+              <FontAwesomeIcon
+                className="skills__card__icon"
+                icon={faListCheck}
+              />
+            }
+            skillName={"Project Planning"}
+            skillDescription={
+              "Streamline success with comprehensive project planning solutions."
+            }
+          />
         </div>
       </div>
     </section>
