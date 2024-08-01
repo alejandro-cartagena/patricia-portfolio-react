@@ -44,12 +44,12 @@ function ServicesSection() {
               Customer-Centric Approach
             </h3>
             <p className="services__section__text">
-              <b>Tailored Services:</b> I customize my services to meet the
-              unique needs of each client, ensuring satisfaction.
+              I customize my services to meet the unique needs of each client,
+              ensuring satisfaction.
             </p>
             <p className="services__section__text">
-              <b>Clear Communication:</b> Regular updates and open communication
-              keep you informed and involved throughout the process.
+              Regular updates and open communication keep you informed and
+              involved throughout the process.
             </p>
           </div>
 
