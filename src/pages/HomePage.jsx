@@ -2,10 +2,11 @@ import React from "react";
 
 import HeroSection from "../components/HeroSection";
 import SkillsSection from "../components/SkillsSection";
+import ServicesSection from "../components/ServicesSection";
 import AboutSection from "../components/AboutSection";
 import ProjectsSection from "../components/ProjectsSection";
+import ReviewsSection from "../components/ReviewsSection";
 import ContactSection from "../components/ContactSection";
-import ServicesSection from "../components/ServicesSection";
 
 function HomePage() {
   return (
@@ -15,6 +16,7 @@ function HomePage() {
       <ServicesSection />
       <AboutSection />
       <ProjectsSection />
+      <ReviewsSection />
       <ContactSection />
     </div>
   );

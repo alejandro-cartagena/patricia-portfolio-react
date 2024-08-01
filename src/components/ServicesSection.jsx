@@ -14,14 +14,12 @@ function ServicesSection() {
           <div className="services__section">
             <h3 className="services__section__heading">Unmatched Quality</h3>
             <p className="services__section__text">
-              <b>Photorealistic Renderings:</b> I use advanced rendering
-              techniques to produce images that are virtually indistinguishable
-              from real photographs.
+              I use advanced rendering techniques to produce images that are
+              virtually indistinguishable from real photographs.
             </p>
             <p className="services__section__text">
-              <b>Attention to Detail:</b> Every project is meticulously crafted,
-              ensuring that every element, from textures to lighting, is
-              perfect.
+              Every project is meticulously crafted, ensuring that every
+              element, from textures to lighting, is perfect.
             </p>
           </div>
 
@@ -30,12 +28,12 @@ function ServicesSection() {
           <div className="services__section">
             <h3 className="services__section__heading">Creative Expertise</h3>
             <p className="services__section__text">
-              <b>Design Background:</b> With a strong foundation in design, I
-              bring a creative perspective to every project.
+              With a strong foundation in design, I bring a creative perspective
+              to every project.
             </p>
             <p className="services__section__text">
-              <b>Innovative Solutions:</b> I continuously explore new methods
-              and ideas to keep my work fresh and original.
+              I continuously explore new methods and ideas to keep my work fresh
+              and original.
             </p>
           </div>
 
