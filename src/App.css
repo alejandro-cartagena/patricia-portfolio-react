@@ -494,6 +494,10 @@ header {
   color: #161c2d;
 }
 
+.services__icon {
+  width: 100px;
+}
+
 .services__section__text {
   font-size: 1.125rem;
   color: #535353;

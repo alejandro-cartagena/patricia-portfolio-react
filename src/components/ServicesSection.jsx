@@ -2,6 +2,10 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
+import highQualityImg from "../images/high-quality.png";
+import creativeImg from "../images/design-thinking.png";
+import customerImg from "../images/rating.png";
+
 function ServicesSection() {
   return (
     <section className="services" id="services">
@@ -13,6 +17,12 @@ function ServicesSection() {
           <div className="services__line"></div>
           <div className="services__section">
             <h3 className="services__section__heading">Unmatched Quality</h3>
+            <img
+              className="services__icon"
+              src={highQualityImg}
+              alt=""
+              srcset=""
+            />
             <p className="services__section__text">
               I use advanced rendering techniques to produce images that are
               virtually indistinguishable from real photographs.
@@ -27,6 +37,12 @@ function ServicesSection() {
 
           <div className="services__section">
             <h3 className="services__section__heading">Creative Expertise</h3>
+            <img
+              className="services__icon"
+              src={creativeImg}
+              alt=""
+              srcset=""
+            />
             <p className="services__section__text">
               With a strong foundation in design, I bring a creative perspective
               to every project.
@@ -43,6 +59,12 @@ function ServicesSection() {
             <h3 className="services__section__heading">
               Customer First Approach
             </h3>
+            <img
+              className="services__icon"
+              src={customerImg}
+              alt=""
+              srcset=""
+            />
             <p className="services__section__text">
               I customize my services to meet the unique needs of each client,
               ensuring satisfaction.
