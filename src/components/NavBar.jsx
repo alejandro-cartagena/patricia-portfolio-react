@@ -51,6 +51,11 @@ function NavBar() {
               Portfolio
             </Link>
           </li>
+          <li>
+            <Link onClick={() => setMenuOpen(false)} to="/#contact">
+              Contact
+            </Link>
+          </li>
         </ul>
       )}
 
@@ -89,6 +94,9 @@ function NavBar() {
           </li>
           <li>
             <Link to="/#projects">Portfolio</Link>
+          </li>
+          <li>
+            <Link to="/#contact">Contact</Link>
           </li>
         </ul>
       </div>

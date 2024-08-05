@@ -41,7 +41,7 @@ function ServicesSection() {
 
           <div className="services__section services__section__last">
             <h3 className="services__section__heading">
-              Customer-Centric Approach
+              Customer First Approach
             </h3>
             <p className="services__section__text">
               I customize my services to meet the unique needs of each client,
@@ -52,18 +52,6 @@ function ServicesSection() {
               involved throughout the process.
             </p>
           </div>
-
-          <h2 className="services__heading">
-            Ready to Transform Your Ideas into Reality?
-          </h2>
-          <div className="services__line"></div>
-          <p className="services__section__text">
-            Book a call with me today to discuss your project and see how I can
-            bring your vision to life with stunning 3D renderings!
-          </p>
-          <a className="btn btn-book-call btn-book-call-services " href="#">
-            Book a Call
-          </a>
         </div>
       </div>
     </section>

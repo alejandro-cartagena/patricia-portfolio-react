@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import PatriciaHeadshot from "../images/patriciaHeadshot.png";
+import PatriciaHeadshot from "../images/patriciaHeadshot2.png";
 
 function HeroSection() {
   return (
@@ -10,7 +10,7 @@ function HeroSection() {
           <div className="hero__text">
             <h3 className="hero__small__heading">Hello, I'm</h3>
             <h1 className="heading">Patricia Jaramillo</h1>
-            <h3 style={{ color: "#ff9330", fontSize: "1.5rem" }}>
+            <h3 className="hero__subheading">
               Interior Designer & Rendering Specialist
             </h3>
             <p className="text">

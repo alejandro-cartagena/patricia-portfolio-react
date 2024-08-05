@@ -8,6 +8,13 @@ body {
   background-color: #eef3ff;
 }
 
+h2,
+h1,
+h3,
+p {
+  color: #161c2d;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -35,7 +42,7 @@ body {
 
 .nav-bar {
   z-index: 10000;
-  background-color: #ffe9d9;
+  background-color: #fefaf3;
   position: sticky;
   top: 0;
   padding: 1em 0;
@@ -77,7 +84,7 @@ body {
   display: block;
   width: 100%;
   height: 30px;
-  background-color: #ffb700;
+  /* background-color: #e65722; */
   justify-self: center;
   margin-top: -26px;
   margin-left: 7px;
@@ -95,7 +102,8 @@ body {
 }
 
 .nav-bar ul li a:hover {
-  color: #ff9330;
+  color: #fb7878;
+  font-weight: 500;
 }
 
 .nav-bar ul li:not(:last-child) {
@@ -112,7 +120,7 @@ body {
 }
 
 .burger-menu:hover {
-  color: #ff9330;
+  color: #fb7878;
 }
 
 .off-screen-menu {
@@ -141,7 +149,7 @@ body {
     justify-content: space-evenly;
     gap: 4em;
     position: absolute;
-    background-color: #ffe9d9;
+    background-color: #fefaf3;
     width: 100%;
     height: 100vh;
     top: 0;
@@ -158,7 +166,7 @@ body {
   }
 
   .off-screen-menu li a:hover {
-    color: #f5b30e;
+    color: #fb7878;
   }
 }
 
@@ -183,7 +191,7 @@ footer h3 {
 /***************/
 
 header {
-  background-color: #ffe9d9;
+  background-color: #fefaf3;
   min-height: 91vh;
   display: flex;
   justify-content: center;
@@ -220,9 +228,17 @@ header {
   margin-bottom: 0;
 }
 
+.hero__subheading {
+  font-size: 2rem;
+  background: linear-gradient(to right, #fb7878 0%, #ffaf74 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .hero__small__heading,
 .projects__small__heading {
-  color: #ff9330;
+  color: #fb7878;
   font-size: 1.75rem;
   margin: 0;
 }
@@ -261,8 +277,10 @@ header {
 }
 
 .btn-primary {
-  color: #ff9330;
-  background-color: black;
+  color: #fb7878;
+  background-color: #161c2d;
+  /* color: #000000;
+  background: linear-gradient(to right, #c278fb, #f973ff); */
   margin-right: 1em;
   transition: ease-in-out 0.2s;
 }
@@ -328,6 +346,7 @@ header {
 #projects,
 #contact,
 #services,
+#call-to-action,
 #reviews {
   padding: 6em 0;
 }
@@ -343,7 +362,6 @@ header {
 .skills__small__heading {
   font-size: 1.75rem;
   margin: 0;
-  color: #ff9330;
 }
 
 .skills .container h2 {
@@ -372,7 +390,7 @@ header {
   background-color: #f5f5f5;
   border-radius: 6px;
   transition: ease-in-out 0.15s;
-  box-shadow: 2px 2px 5px #f5b30e;
+  box-shadow: 2px 2px 5px #fb7878;
   /* box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2); */
 }
 
@@ -390,6 +408,7 @@ header {
 }
 
 .skills__card__icon {
+  color: #161c2d;
   font-size: 1.75rem;
   transition: ease-in-out 0.15s;
 }
@@ -405,11 +424,11 @@ header {
 }
 
 .skills__card:hover .skills__card__icon {
-  color: #ffb700;
+  color: #fb7878;
 }
 
 .skills__card__title {
-  color: #080808;
+  color: #161c2d;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
@@ -446,7 +465,7 @@ header {
 }
 
 .services__line {
-  border-bottom: 4px solid #f5b30e;
+  border-bottom: 4px solid #fb7878;
   width: 300px;
   margin: 0 auto;
   margin-bottom: 2.5em;
@@ -457,10 +476,6 @@ header {
   padding: 2em;
   border-radius: 4px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.services__section__last {
-  margin-bottom: 6em;
 }
 
 .services__arrow {
@@ -476,7 +491,7 @@ header {
 .services__section__heading {
   margin-top: 0;
   font-size: 1.75rem;
-  color: #535353;
+  color: #161c2d;
 }
 
 .services__section__text {
@@ -491,12 +506,20 @@ header {
   margin-right: auto;
 }
 
+/*********************************/
+/*CALL TO ACTION SECTION STYLES */
+/*******************************/
+#call-to-action {
+  background-color: #ffffff;
+  text-align: center;
+}
+
 /******************************/
 /* About Section Styles  *****/
 /****************************/
 
 .about {
-  background-color: #ffe9d9;
+  background-color: #eef3ff;
 }
 
 .about-container {
@@ -509,7 +532,7 @@ header {
 .skills__small__heading {
   font-size: 1.75rem;
   margin: 0;
-  color: #f5b30e;
+  color: #fb7878;
 }
 
 .about-title {
@@ -582,7 +605,7 @@ header {
 
 .project-card {
   cursor: pointer;
-  background-color: #ffe9d9;
+  background-color: #fefaf3;
   padding: 2em;
   border-radius: 6px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
@@ -736,13 +759,13 @@ header {
 /************************/
 
 .contact {
-  background-color: #ffe9d9;
+  background-color: #fefaf3;
 }
 
 .contact__heading {
   font-size: 1.75rem;
   margin: 0;
-  color: #ff9330;
+  color: #fb7878;
 }
 
 .contact__subheading {
@@ -773,7 +796,7 @@ header {
   border: solid black;
   text-decoration: none;
   font-weight: 500;
-  color: #ff9330;
+  color: #fb7878;
   background-color: #04091e;
   border-radius: 4px;
   font-size: 1.35rem;
