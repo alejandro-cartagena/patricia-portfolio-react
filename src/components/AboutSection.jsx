@@ -14,7 +14,7 @@ function AboutSection() {
               Patricia has over 20 years of experience in the construction
               industry. She began her career working at the municipality of
               Miami Beach. Her work with the municipality was the catalyst for
-              her to pursue Interior Design; and ultimately led to her finding
+              her to pursue Interior Design and ultimately led to her finding
               her passion in rendering. Being able to assist clients in
               visualizing their completed projects prior to even breaking ground
               has been an incredibly rewarding experience. Patricia enjoys being

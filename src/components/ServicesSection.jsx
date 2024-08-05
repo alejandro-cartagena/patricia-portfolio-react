@@ -21,7 +21,7 @@ function ServicesSection() {
               className="services__icon"
               src={highQualityImg}
               alt=""
-              srcset=""
+              srcSet=""
             />
             <p className="services__section__text">
               I use advanced rendering techniques to produce images that are
@@ -41,7 +41,7 @@ function ServicesSection() {
               className="services__icon"
               src={creativeImg}
               alt=""
-              srcset=""
+              srcSet=""
             />
             <p className="services__section__text">
               With a strong foundation in design, I bring a creative perspective
@@ -63,7 +63,7 @@ function ServicesSection() {
               className="services__icon"
               src={customerImg}
               alt=""
-              srcset=""
+              srcSet=""
             />
             <p className="services__section__text">
               I customize my services to meet the unique needs of each client,
