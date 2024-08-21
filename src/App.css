@@ -454,6 +454,10 @@ header {
 /*SERVICES SECTION STYLES */
 /*************************/
 
+#services {
+  background-color: #eef3ff;
+}
+
 .services {
   text-align: center;
 }
