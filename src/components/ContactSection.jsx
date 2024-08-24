@@ -12,12 +12,12 @@ function ContactSection() {
           <div>
             <h3 className="contact__details__key">Email</h3>
             <p className="contact__details__value">
-              patriciajaramillo@gmail.com
+              Patriciaejaramillo@gmail.com
             </p>
           </div>
           <div>
             <h3 className="contact__details__key">Phone</h3>
-            <p className="contact__details__value">+1 (786)444-7777</p>
+            <p className="contact__details__value">+1 (305)992-1194</p>
           </div>
           <div>
             <h3 className="contact__details__key">My Location</h3>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import PatriciaAboutImg from "../images/patriciaAbout.png";
+import PatriciaAboutImg from "../images/aboutPicPatricia.jpg";
 function AboutSection() {
   return (
     <section className="about" id="about">
