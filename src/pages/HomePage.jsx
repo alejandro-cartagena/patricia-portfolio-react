@@ -6,20 +6,78 @@ import ServicesSection from "../components/ServicesSection";
 import CallToAction from "../components/CallToAction";
 import AboutSection from "../components/AboutSection";
 import ProjectsSection from "../components/ProjectsSection";
-import ReviewsSection from "../components/ReviewsSection";
+// import ReviewsSection from "../components/ReviewsSection";
 import ContactSection from "../components/ContactSection";
+
+// React Animate On Scroll
+import "animate.css/animate.compat.css";
+import ScrollAnimation from "react-animate-on-scroll";
 
 function HomePage() {
   return (
     <div>
       <HeroSection />
-      <SkillsSection />
-      <ServicesSection />
-      <CallToAction />
-      <AboutSection />
-      <ProjectsSection />
+
+      {/* SKILLS */}
+      <ScrollAnimation
+        animateIn="fadeIn"
+        duration={0.75}
+        offset={360}
+        animateOnce={true}
+      >
+        <SkillsSection />
+      </ScrollAnimation>
+
+      {/* SERVICES */}
+      <ScrollAnimation
+        animateIn="fadeIn"
+        duration={0.75}
+        offset={360}
+        animateOnce={true}
+      >
+        <ServicesSection />
+      </ScrollAnimation>
+
+      {/* CALL TO ACTION */}
+      <ScrollAnimation
+        animateIn="fadeIn"
+        duration={0.75}
+        offset={360}
+        animateOnce={true}
+      >
+        <CallToAction />
+      </ScrollAnimation>
+
+      {/* ABOUT */}
+      <ScrollAnimation
+        animateIn="fadeIn"
+        duration={0.75}
+        offset={280}
+        animateOnce={true}
+      >
+        <AboutSection />
+      </ScrollAnimation>
+
+      {/* PROJECTS */}
+      <ScrollAnimation
+        animateIn="fadeIn"
+        duration={0.75}
+        offset={360}
+        animateOnce={true}
+      >
+        <ProjectsSection />
+      </ScrollAnimation>
       {/* <ReviewsSection /> */}
-      <ContactSection />
+
+      {/* CONTACT */}
+      <ScrollAnimation
+        animateIn="fadeIn"
+        duration={0.75}
+        offset={360}
+        animateOnce={true}
+      >
+        <ContactSection />
+      </ScrollAnimation>
     </div>
   );
 }
