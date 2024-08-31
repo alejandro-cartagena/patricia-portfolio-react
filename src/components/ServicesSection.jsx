@@ -24,12 +24,8 @@ function ServicesSection() {
               srcSet=""
             />
             <p className="services__section__text">
-              I use advanced rendering techniques to produce images that are
-              virtually indistinguishable from real photographs.
-            </p>
-            <p className="services__section__text">
-              Every project is meticulously crafted, ensuring that every
-              element, from textures to lighting, is perfect.
+              I use advanced rendering techniques to produce photorealistic
+              images
             </p>
           </div>
 
@@ -46,10 +42,6 @@ function ServicesSection() {
             <p className="services__section__text">
               With a strong foundation in design, I bring a creative perspective
               to every project.
-            </p>
-            <p className="services__section__text">
-              I continuously explore new methods and ideas to keep my work fresh
-              and original.
             </p>
           </div>
 
@@ -68,10 +60,6 @@ function ServicesSection() {
             <p className="services__section__text">
               I customize my services to meet the unique needs of each client,
               ensuring satisfaction.
-            </p>
-            <p className="services__section__text">
-              Regular updates and open communication keep you informed and
-              involved throughout the process.
             </p>
           </div>
         </div>

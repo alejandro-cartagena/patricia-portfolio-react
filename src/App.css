@@ -480,6 +480,9 @@ header {
 }
 
 .services__section {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
   background-color: #ffffff;
   padding: 2em;
   border-radius: 4px;
@@ -808,6 +811,7 @@ header {
 }
 
 .btn-book-call {
+  cursor: pointer;
   display: block;
   width: fit-content;
   margin-top: 1.5em;
@@ -840,6 +844,7 @@ header {
   }
 
   .btn-book-call-contact {
+    cursor: pointer;
     margin-left: auto;
     margin-right: auto;
   }
