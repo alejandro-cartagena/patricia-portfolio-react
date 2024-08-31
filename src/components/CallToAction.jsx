@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import BookCallBtn from "./BookCallBtn";
 
 function CallToAction() {
   return (
@@ -13,9 +14,7 @@ function CallToAction() {
             Book a call with me today to discuss your project and see how I can
             bring your vision to life with stunning 3D renderings!
           </p>
-          <a className="btn btn-book-call btn-book-call-services " href="#">
-            Book a Call
-          </a>
+          <BookCallBtn section={"btn-book-call-services"} />
         </div>
       </div>
     </div>

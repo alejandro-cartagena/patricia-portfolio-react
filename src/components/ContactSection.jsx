@@ -1,4 +1,5 @@
 import React from "react";
+import BookCallBtn from "./BookCallBtn";
 
 function ContactSection() {
   return (
@@ -24,9 +25,7 @@ function ContactSection() {
             <p className="contact__details__value">Miami Beach, FL</p>
           </div>
         </div>
-        <a className="btn btn-book-call btn-book-call-contact" href="#">
-          Book a Call
-        </a>
+        <BookCallBtn section={"btn-book-call-contact"} />
       </div>
     </section>
   );
