@@ -3,6 +3,7 @@ import React from "react";
 import HeroSection from "../components/HeroSection";
 import SkillsSection from "../components/SkillsSection";
 import ServicesSection from "../components/ServicesSection";
+import PhotoGallerySection from "../components/PhotoGallerySection";
 import CallToAction from "../components/CallToAction";
 import AboutSection from "../components/AboutSection";
 import ProjectsSection from "../components/ProjectsSection";
@@ -37,6 +38,16 @@ function HomePage() {
       >
         <ServicesSection />
       </ScrollAnimation>
+
+      {/* PHOTO GALLERY */}
+      {/* <ScrollAnimation
+        animateIn="fadeIn"
+        duration={0.75}
+        offset={360}
+        animateOnce={true}
+      >
+        <PhotoGallerySection />
+      </ScrollAnimation> */}
 
       {/* CALL TO ACTION */}
       <ScrollAnimation
