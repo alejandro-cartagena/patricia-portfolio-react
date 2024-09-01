@@ -3,7 +3,10 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 // Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronRight,
+  faChevronLeft,
+} from "@fortawesome/free-solid-svg-icons";
 
 import { useOverlay } from "../context/OverlayContext";
 
@@ -104,6 +107,7 @@ function PhotoGallerySection() {
           <button
             className="photo-gallery__photo__screen__arrow__btn"
             style={{
+              padding: "0.5em",
               marginRight: "1em",
               cursor: "pointer",
               border: "none",
@@ -114,7 +118,7 @@ function PhotoGallerySection() {
             <FontAwesomeIcon
               className="photo-gallery__photo__screen__arrow__btn__icon"
               style={iconStyle}
-              icon={faArrowLeft}
+              icon={faChevronLeft}
             />
           </button>
           <img
@@ -127,6 +131,7 @@ function PhotoGallerySection() {
             className="photo-gallery__photo__screen__arrow__btn"
             style={{
               marginLeft: "1em",
+              padding: "0.5em",
               cursor: "pointer",
               border: "none",
               borderRadius: "4px",
@@ -136,7 +141,7 @@ function PhotoGallerySection() {
             <FontAwesomeIcon
               className="photo-gallery__photo__screen__arrow__btn__icon"
               style={iconStyle}
-              icon={faArrowRight}
+              icon={faChevronRight}
             />
           </button>
         </div>

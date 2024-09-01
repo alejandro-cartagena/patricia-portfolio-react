@@ -543,11 +543,16 @@ header {
 .photo-gallery__photo__screen__close__btn:hover,
 .photo-gallery__photo__screen__arrow__btn:hover {
   background-color: #c5c4c4;
+  color: #fc5959;
+}
+
+/* .photo-gallery__photo__screen__arrow__btn:hover {
+  colo
 }
 
 .photo-gallery__photo__screen__arrow__btn__icon:hover {
   color: #fc5959;
-}
+} */
 
 /*********************************/
 /*CALL TO ACTION SECTION STYLES */
