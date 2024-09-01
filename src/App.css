@@ -16,6 +16,10 @@ p {
   color: #161c2d;
 }
 
+h1 {
+  font-size: 2.75rem;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -42,13 +46,13 @@ p {
 /*********/
 
 .nav-bar {
-  z-index: 10000;
+  /* z-index: 10000; */
   /* background-color: #fefaf3; */
   background-color: #f8fafc;
   position: sticky;
   top: 0;
   padding: 1em 0;
-  transition: ease-in 0.2s;
+  /* transition: ease-in 0.2s; */
 }
 
 .nav-bar.active {
@@ -349,6 +353,7 @@ header {
 #projects,
 #contact,
 #services,
+#photo-gallery,
 #call-to-action,
 #reviews {
   padding: 6em 0;
@@ -519,6 +524,29 @@ header {
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
+}
+
+/*************************************/
+/* Photo Gallery Section Styles *****/
+/***********************************/
+#photo-gallery {
+  background-color: #f8fafc;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.photo-gallery__header {
+  text-align: center;
+  margin-top: 0;
+}
+
+.photo-gallery__photo__screen__close__btn:hover,
+.photo-gallery__photo__screen__arrow__btn:hover {
+  background-color: #c5c4c4;
+}
+
+.photo-gallery__photo__screen__arrow__btn__icon:hover {
+  color: #fc5959;
 }
 
 /*********************************/

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ReactPlayer from "react-player";
-import projects from "../projectsData";
+
+import projectsData from "../projectsData";
+const { projects } = projectsData;
 
 import styled from "styled-components";
 

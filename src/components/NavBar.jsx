@@ -3,10 +3,13 @@ import { useLocation, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaintBrush, faBars, faX } from "@fortawesome/free-solid-svg-icons";
 
+import { useOverlay } from "../context/OverlayContext";
+
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [navScroll, setNavScroll] = useState(false);
   const location = useLocation();
+  const { isOverlayActive } = useOverlay();
 
   const setNavScrollEffect = () => {
     if (window.scrollY >= 83) {
@@ -28,7 +31,13 @@ function NavBar() {
   }, [location]);
 
   return (
-    <nav className={`nav-bar ${navScroll ? "active" : ""}`}>
+    <nav
+      className={`nav-bar ${navScroll ? "active" : ""}`}
+      style={{
+        zIndex: isOverlayActive ? 0 : 10000,
+        transition: isOverlayActive ? "none" : "ease-in 0.2s",
+      }}
+    >
       {menuOpen && (
         <ul className="off-screen-menu">
           <li>

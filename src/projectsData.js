@@ -131,4 +131,22 @@ const projects = [
   },
 ];
 
-export default projects;
+const images = [
+  portsViewImg1,
+  portsViewImg2,
+  portsViewImg3,
+  portsViewImg4,
+  blueMountainImg1,
+  blueMountainImg2,
+  blueMountainImg3,
+  blueMountainImg4,
+  parkingLotImg1,
+  parkingLotImg2,
+  parkingLotImg3,
+  houseImg1,
+  houseImg2,
+  houseImg3,
+  houseImg4,
+];
+
+export default { projects, images };

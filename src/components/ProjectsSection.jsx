@@ -1,6 +1,5 @@
 import React from "react";
 
-import BuildingImg from "../images/building.jpg";
 import portsViewImg1 from "../images/portsViewImg1.jpg";
 import Lobby from "../images/lobby.jpg";
 import ParkingLot from "../images/parking-lot.jpg";

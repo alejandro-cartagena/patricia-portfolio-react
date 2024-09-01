@@ -9,7 +9,7 @@ export default function BookCallPage() {
         Book a <span style={{ color: "#fb7878" }}>FREE</span> consultation with
         me
       </h1>
-      <p>
+      <p style={{ fontSize: "1.125rem" }}>
         Let's discuss how I can bring your ideas to life with stunning 3D
         renderings
       </p>

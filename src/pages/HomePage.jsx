@@ -40,24 +40,17 @@ function HomePage() {
       </ScrollAnimation>
 
       {/* PHOTO GALLERY */}
-      {/* <ScrollAnimation
-        animateIn="fadeIn"
-        duration={0.75}
-        offset={360}
-        animateOnce={true}
-      >
-        <PhotoGallerySection />
-      </ScrollAnimation> */}
-
-      {/* CALL TO ACTION */}
       <ScrollAnimation
         animateIn="fadeIn"
         duration={0.75}
         offset={360}
         animateOnce={true}
       >
-        <CallToAction />
+        <PhotoGallerySection />
       </ScrollAnimation>
+
+      {/* CALL TO ACTION */}
+      <CallToAction />
 
       {/* ABOUT */}
       <ScrollAnimation
