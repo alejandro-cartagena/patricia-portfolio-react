@@ -105,7 +105,7 @@ p {
 
 .nav-bar ul li a:hover {
   color: #fb7878;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .nav-bar ul li:not(:last-child) {
@@ -129,7 +129,7 @@ p {
   display: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 780px) {
   .nav-ul-big-screens {
     display: none;
   }
@@ -149,7 +149,6 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    gap: 4em;
     position: absolute;
     /* background-color: #fefaf3; */
     background-color: #f8fafc;
@@ -847,5 +846,40 @@ header {
     cursor: pointer;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+/* BOOK CALL PAGE STYLES */
+.book-call {
+  text-align: center;
+  padding-top: 3em;
+}
+
+.book-call__calendly__container {
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  height: 100%;
+  margin-bottom: 4em;
+}
+
+/* Calendly Widget styles */
+
+.calendly-inline-widget {
+  height: 808px !important;
+}
+
+@media (min-width: 720px) {
+  .calendly-inline-widget {
+    height: 940px !important;
+  }
+
+  .book-call__calendly__container {
+    background-color: #f8fafc;
+  }
+}
+
+@media (min-width: 1060px) {
+  .calendly-inline-widget {
+    height: 850px !important;
   }
 }

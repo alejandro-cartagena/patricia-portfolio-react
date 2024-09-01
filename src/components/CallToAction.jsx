@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import BookCallBtn from "./BookCallBtn";
+import { InlineWidget } from "react-calendly";
 
 function CallToAction() {
   return (
@@ -14,7 +16,11 @@ function CallToAction() {
             Book a call with me today to discuss your project and see how I can
             bring your vision to life with stunning 3D renderings!
           </p>
-          <BookCallBtn section={"btn-book-call-services"} />
+          <Link to="/book" className="btn btn-book-call btn-book-call-services">
+            Book a Call
+          </Link>
+          {/* <BookCallBtn section={"btn-book-call-services"} /> */}
+          {/* <InlineWidget url="https://calendly.com/alejandrocartagena68" /> */}
         </div>
       </div>
     </div>

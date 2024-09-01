@@ -1,9 +1,9 @@
 // import "./App.css";
-import { useLocation } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 
 import HomePage from "./pages/HomePage";
 import ProjectPage from "./pages/ProjectPage";
+import BookCallPage from "./pages/BookCallPage";
 
 // Components
 import NavBar from "./components/NavBar";
@@ -16,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/project/:projectId" element={<ProjectPage />} />
+        <Route path="/book" element={<BookCallPage />} />
       </Routes>
       <Footer />
     </div>

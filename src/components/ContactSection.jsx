@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import BookCallBtn from "./BookCallBtn";
 
 function ContactSection() {
@@ -25,7 +27,9 @@ function ContactSection() {
             <p className="contact__details__value">Miami Beach, FL</p>
           </div>
         </div>
-        <BookCallBtn section={"btn-book-call-contact"} />
+        <Link to="/book" className="btn btn-book-call btn-book-call-contact">
+          Book a Call
+        </Link>
       </div>
     </section>
   );
