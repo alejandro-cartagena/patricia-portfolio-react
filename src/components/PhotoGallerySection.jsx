@@ -59,8 +59,6 @@ function PhotoGallerySection() {
     }
   };
 
-  console.log(images.length);
-
   return (
     <>
       {data.img && (
