@@ -491,6 +491,11 @@ header {
   padding: 2em;
   border-radius: 4px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: ease-in-out 0.15s;
+}
+
+.services__section:hover {
+  box-shadow: 4px 4px 10px rgba(251, 120, 120, 1);
 }
 
 .services__arrow {
