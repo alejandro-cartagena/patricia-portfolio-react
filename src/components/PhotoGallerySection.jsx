@@ -94,13 +94,15 @@ function PhotoGallerySection() {
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
           <Masonry gutter="20px">
             {images.map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                style={{ width: "100%", display: "block", cursor: "pointer" }}
-                alt="project image"
-                onClick={() => viewImage(image, index)}
-              />
+              <div className="photo-gallery__zoom__img">
+                <img
+                  key={index}
+                  src={image}
+                  style={{ width: "100%", display: "block", cursor: "pointer" }}
+                  alt="project image"
+                  onClick={() => viewImage(image, index)}
+                />
+              </div>
             ))}
           </Masonry>
         </ResponsiveMasonry>
