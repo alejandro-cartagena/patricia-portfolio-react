@@ -16,21 +16,6 @@ const { images } = projectsData;
 function PhotoGallerySection() {
   const [data, setData] = useState({ img: "", i: 0 });
   const { setIsOverlayActive } = useOverlay();
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  // Define the style conditionally based on window width
-  const iconStyle = {
-    fontSize: windowWidth < 768 ? "1rem" : "2rem", // Example: smaller size for screens narrower than 768px
-  };
 
   useEffect(() => {
     if (data.img) {
@@ -66,58 +51,22 @@ function PhotoGallerySection() {
     }
   };
 
-  console.log(data);
-
   return (
     <>
       {data.img && (
-        <div
-          className="photo-gallery__photo__screen"
-          style={{
-            width: "100%",
-            height: "100vh",
-            background: "black",
-            position: "fixed",
-            top: 0,
-            left: 0,
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            overflow: "hidden",
-          }}
-        >
+        <div className="photo-gallery__photo__screen">
           <button
             className="photo-gallery__photo__screen__close__btn"
             onClick={closeImage}
-            style={{
-              position: "absolute",
-              top: 20,
-              right: 30,
-              color: "red",
-              fontSize: "2rem",
-              cursor: "pointer",
-              height: "50px",
-              width: "50px",
-              borderRadius: "50%",
-              border: "none",
-            }}
           >
             X
           </button>
           <button
-            className="photo-gallery__photo__screen__arrow__btn"
-            style={{
-              padding: "0.5em",
-              marginRight: "1em",
-              cursor: "pointer",
-              border: "none",
-              borderRadius: "4px",
-            }}
+            className="photo-gallery__photo__screen__arrow__btn arrow__btn__left"
             onClick={() => imgAction("prev-img")}
           >
             <FontAwesomeIcon
               className="photo-gallery__photo__screen__arrow__btn__icon"
-              style={iconStyle}
               icon={faChevronLeft}
             />
           </button>
@@ -125,22 +74,14 @@ function PhotoGallerySection() {
             src={data.img}
             alt=""
             srcSet=""
-            style={{ width: "auto", maxWidth: "75%", maxHeight: "75%" }}
+            style={{ width: "90%", maxWidth: "1200px", maxHeight: "100%" }}
           />
           <button
-            className="photo-gallery__photo__screen__arrow__btn"
-            style={{
-              marginLeft: "1em",
-              padding: "0.5em",
-              cursor: "pointer",
-              border: "none",
-              borderRadius: "4px",
-            }}
+            className="photo-gallery__photo__screen__arrow__btn arrow__btn__right"
             onClick={() => imgAction("next-img")}
           >
             <FontAwesomeIcon
               className="photo-gallery__photo__screen__arrow__btn__icon"
-              style={iconStyle}
               icon={faChevronRight}
             />
           </button>

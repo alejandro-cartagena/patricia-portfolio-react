@@ -8,9 +8,9 @@ function CallToAction() {
     <div className="call-to-action" id="call-to-action">
       <div className="container">
         <div className="services__container">
-          <h2 className="services__heading">
+          <h1 className="services__heading">
             Ready to Transform Your Ideas into Reality?
-          </h2>
+          </h1>
           <div className="services__line"></div>
           <p className="services__section__text">
             Book a call with me today to discuss your project and see how I can
