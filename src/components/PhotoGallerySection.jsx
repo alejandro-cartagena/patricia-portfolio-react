@@ -45,11 +45,21 @@ function PhotoGallerySection() {
   const imgAction = (action) => {
     let i = data.i;
     if (action === "next-img") {
-      setData({ img: images[i + 1], i: i + 1 });
+      if (i === images.length - 1) {
+        setData({ img: images[0], i: 0 });
+      } else {
+        setData({ img: images[i + 1], i: i + 1 });
+      }
     } else if (action === "prev-img") {
-      setData({ img: images[i - 1], i: i - 1 });
+      if (i === 0) {
+        setData({ img: images[images.length - 1], i: images.length - 1 });
+      } else {
+        setData({ img: images[i - 1], i: i - 1 });
+      }
     }
   };
+
+  console.log(images.length);
 
   return (
     <>
@@ -94,7 +104,7 @@ function PhotoGallerySection() {
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
           <Masonry gutter="20px">
             {images.map((image, index) => (
-              <div className="photo-gallery__zoom__img">
+              <div key={index} className="photo-gallery__zoom__img">
                 <img
                   key={index}
                   src={image}
