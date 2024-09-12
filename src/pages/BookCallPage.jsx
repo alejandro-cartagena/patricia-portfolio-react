@@ -14,7 +14,7 @@ export default function BookCallPage() {
         renderings
       </p>
       <div className="container book-call__calendly__container">
-        <InlineWidget url="https://calendly.com/alejandrocartagena68/30min" />
+        <InlineWidget url="https://calendly.com/pjproductiondesign/30min" />
       </div>
     </div>
   );
