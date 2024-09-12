@@ -5,11 +5,11 @@ export default function BookCallPage() {
   return (
     <div className="book-call">
       <ScrollToTop />
-      <h1 className="book-call__heading">
+      <h1 className="book-call__heading container">
         Book a <span style={{ color: "#fb7878" }}>FREE</span> consultation with
         me
       </h1>
-      <p style={{ fontSize: "1.125rem" }}>
+      <p className="book-call__small__text container">
         Let's discuss how I can bring your ideas to life with stunning 3D
         renderings
       </p>

@@ -58,19 +58,6 @@ function ProjectPage() {
           paddingTop: "60%" /* 16:9 Aspect Ratio */,
         }}
       >
-        {/* <ReactPlayer
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-          }}
-          url={item.embedUrl}
-          controls={true}
-          width="100%"
-          height="650px"
-          playing={true}
-          light={item.thumbnail}
-        /> */}
         <StyledReactPlayer
           style={{
             position: "absolute",
@@ -91,7 +78,6 @@ function ProjectPage() {
     <div className="project-page container">
       <div className="project-video-title-container">
         <h1 className="project-name">{projects[projectId].name}</h1>
-        <div className="services__line"></div>
         {images && (
           <div className="image-gallery">
             <ImageGallery
@@ -101,17 +87,6 @@ function ProjectPage() {
             />
           </div>
         )}
-        {/* <div className="project-info">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
-            nostrum ab fuga inventore minima consequuntur ducimus voluptatem
-            pariatur non quam eum, nulla magnam quasi harum illo laudantium
-            voluptatibus maiores rem! Voluptate, amet culpa unde officiis non
-            blanditiis distinctio? Quos odit laborum non quia quod dolorem quo
-            dolorum maiores ullam ipsam officia doloribus voluptatibus possimus
-            labore ut, aspernatur quibusdam eaque atque.
-          </p>
-        </div> */}
       </div>
     </div>
   );

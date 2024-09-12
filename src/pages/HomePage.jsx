@@ -1,4 +1,6 @@
 import React from "react";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 import HeroSection from "../components/HeroSection";
 import SkillsSection from "../components/SkillsSection";
@@ -15,6 +17,14 @@ import "animate.css/animate.compat.css";
 import ScrollAnimation from "react-animate-on-scroll";
 
 function HomePage() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollY) {
+      window.scrollTo(0, location.state.scrollY); // Restore the saved scroll position
+    }
+  }, [location]);
+
   return (
     <div>
       <HeroSection />

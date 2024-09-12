@@ -51,7 +51,7 @@ h1 {
   background-color: #f8fafc;
   position: sticky;
   top: 0;
-  padding: 1em 0;
+  padding: 0.5em 0;
   /* transition: ease-in 0.2s; */
 }
 
@@ -121,7 +121,7 @@ h1 {
   font-size: 2rem;
   position: absolute;
   right: 1em;
-  top: 0.65em;
+  top: 0.45em;
   cursor: pointer;
 }
 
@@ -133,7 +133,7 @@ h1 {
   display: none;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 850px) {
   .nav-ul-big-screens {
     display: none;
   }
@@ -183,7 +183,7 @@ h1 {
 footer {
   margin-top: auto;
   text-align: center;
-  padding: 2em;
+  padding: 1em;
   background-color: #04091e;
 }
 
@@ -353,10 +353,14 @@ header {
 #projects,
 #contact,
 #services,
-#photo-gallery,
 #call-to-action,
 #reviews {
   padding: 6em 0;
+}
+
+#gallery {
+  padding-top: 6em;
+  padding-bottom: 20px;
 }
 
 /******************************/
@@ -779,6 +783,7 @@ header {
 }
 
 .project-name {
+  border-bottom: 4px solid #fb7878;
   margin-top: 0;
   margin-bottom: 0.5em;
 }
@@ -966,6 +971,12 @@ header {
 .book-call {
   text-align: center;
   padding-top: 3em;
+}
+
+.book-call__small__text {
+  font-size: 1.125rem;;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .book-call__calendly__container {

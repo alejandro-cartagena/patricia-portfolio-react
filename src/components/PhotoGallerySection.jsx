@@ -95,7 +95,7 @@ function PhotoGallerySection() {
           </button>
         </div>
       )}
-      <div className="photo-gallery" id="photo-gallery">
+      <div className="photo-gallery" id="gallery">
         <h1 className="photo-gallery__header">
           A <span style={{ color: "#fb7878" }}>Gallery</span> of my Works
         </h1>

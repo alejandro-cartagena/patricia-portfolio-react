@@ -5,8 +5,7 @@ function Footer() {
     <footer>
       <div>
         <h3>
-          © Copyright 2024 Patricia Jaramillo - 3D Rendering Specialist | All
-          Rights Reserved
+          © Copyright 2024 Patricia Jaramillo
         </h3>
       </div>
     </footer>

@@ -19,8 +19,18 @@ function NavBar() {
     }
   };
 
-  window.addEventListener("scroll", setNavScrollEffect);
+  useEffect(() => {
+    const handleScroll = () => {
+      window.requestAnimationFrame(setNavScrollEffect);
+    };
 
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // Smooth scroll to sections based on hash links
   useEffect(() => {
     if (location.hash) {
       const element = document.querySelector(location.hash);
@@ -48,6 +58,11 @@ function NavBar() {
           <li>
             <Link onClick={() => setMenuOpen(false)} to="/#skills">
               Skills
+            </Link>
+          </li>
+          <li>
+            <Link onClick={() => setMenuOpen(false)} to="/#gallery">
+              Gallery
             </Link>
           </li>
           <li>
@@ -102,6 +117,9 @@ function NavBar() {
           </li>
           <li>
             <Link to="/#skills">Skills</Link>
+          </li>
+          <li>
+            <Link to="/#gallery">Gallery</Link>
           </li>
           <li>
             <Link to="/#about">About</Link>
